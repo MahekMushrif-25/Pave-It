@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/request_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name: Mahek Mushrif"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- User Age -->
+    <TextView
+        android:id="@+id/request_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Age: 20"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/request_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- User Number -->
+    <TextView
+        android:id="@+id/request_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Number: 8369136492"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/request_age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/request_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Location: Navi Mumbai"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/request_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Image Placeholder -->
+    <ImageView
+        android:id="@+id/request_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/request_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/request_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textSize="14sp"
+        android:textColor="#FF0000"
+        app:layout_constraintTop_toBottomOf="@id/request_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
